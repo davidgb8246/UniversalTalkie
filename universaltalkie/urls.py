@@ -20,7 +20,7 @@ from django.views.generic import RedirectView
 from universaltalkie.views import heartbeat
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('heartbeat/', heartbeat),
 
     path('', RedirectView.as_view(url='/heartbeat/', permanent=True)),
